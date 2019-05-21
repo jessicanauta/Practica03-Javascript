@@ -5,16 +5,17 @@
     <title>GALERIA DE IMAGENES</title>
     <h1>AVES</h1>
     <link type="text/css" href="css/estilo.css" rel="stylesheet">
+    <script type="text/javascript" src="js/galeria.js"></script>
 </head>
 
-<body>
+<body onclick="iniciar();">
 
-    <form action="">
-        <p><img src="images/imagen1.jpg" alt="Imagen aleatoria" /></p>
+    <form>
+        <p><img id="ia" src="images/imagen1.jpg" alt="Imagen aleatoria" /></p>
 
-        <input type="button" id="anterior" value="Anterior">
-        <input type="button" id="iniciar" value="Iniciar">
-        <input type="button" id="siguiente" value="Adelante">
+        <input type="button" id="anterior" value="Anterior" onclick="anterior();">
+        <input type="button" id="iniciar" value="Iniciar" onclick="iniciar();">
+        <input type="button" id="siguiente" value="Siguiente" onclick="siguiente();">
 
     </form>
 
